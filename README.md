@@ -47,7 +47,7 @@ flowchart LR
 
     User --> CF
     CF -->|/api/*| APIGW
-    CF -->|static| S3
+    CF -->|/*| S3
     APIGW --> Lambda
     Lambda --> DB
 ```
