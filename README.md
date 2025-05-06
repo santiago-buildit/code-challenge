@@ -18,23 +18,6 @@ The solution is designed for deployment on AWS. It consists of a frontend built 
 The following diagram illustrates the main components and their distribution across AWS services:
 
 ```mermaid
-%%{init: {"theme": "neutral", 
-
-  "flowchart": {
-    "nodeSpacing": 50
-  },
-"themeVariables": {
-  "primaryColor": "#ffffff",
-  "edgeLabelBackground": "#ffffff",
-  "primaryTextColor": "#1f2937",
-  "primaryBorderColor": "#444444",
-  "lineColor": "#3b82f6",
-  
-  "fontFamily": "Segoe UI, sans-serif",
-  "fontSize": "18px",
-  "spacing": 90
-}}}%%
-
 flowchart LR
     subgraph CLIENT["Client"]
         User["🌐 Browser"]
