@@ -82,6 +82,13 @@ export default defineComponent({
     if (this.isEditMode || this.isViewMode) {
       this.loadBook()
     }
+
+    // Watch for mode change (e.g., when toggleMode() is called)
+    this.$watch(() =>this.mode, () => {
+      if (this.isEditMode || this.isViewMode) {
+        this.loadBook()
+      }
+    })
   },
   methods: {
     async loadBook() { // Load book data from API
