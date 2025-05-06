@@ -175,7 +175,7 @@ flowchart LR
 
 ---
 
-## ⚙️ Deployment & Makefile
+## ⚙️ Build & Deploy
 
 To build and deploy the solution, some development tools must be installed as prerequisites.
 
