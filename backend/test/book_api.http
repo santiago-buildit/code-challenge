@@ -1,0 +1,57 @@
+
+### Define base URL
+@base_url = https://d21meifd8clvjr.cloudfront.net/api
+@book_id = 97d0f615-99a0-4d35-9c92-03ab6eb4643e
+
+### Create Book
+POST {{base_url}}/books
+Content-Type: application/json
+
+{
+  "isbn": "9780544003415",
+  "title": "The Lord of the Rings",
+  "author": "J.R.R. Tolkien",
+  "description": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them"
+}
+
+### List Books
+POST {{base_url}}/books/list
+Content-Type: application/json
+
+{
+  "page": 1,
+  "page_size": 10,
+  "sort_by": "title",
+  "sort_order": "asc",
+  "isbn": "",
+  "title": "",
+  "author": "",
+  "status": "",
+  "text": ""
+}
+
+### Get Book by ID
+GET {{base_url}}/books/{{book_id}}
+
+### Update Book
+PUT {{base_url}}/books/{{book_id}}
+Content-Type: application/json
+
+{
+  "isbn": "9780544003415",
+  "title": "The Lord of the Rings",
+  "author": "J.R.R. Tolkien",
+  "description": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them"
+}
+
+### Delete Book
+DELETE {{base_url}}/books/{{book_id}}
+
+### Checkout Book
+PUT {{base_url}}/books/{{book_id}}/checkout
+
+### Checkin Book
+PUT {{base_url}}/books/{{book_id}}/checkin
+
+### Get Book with History
+GET {{base_url}}/books/{{book_id}}/details
