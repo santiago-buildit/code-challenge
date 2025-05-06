@@ -21,7 +21,7 @@ The following diagram illustrates the main components and their distribution acr
 %%{init: {"theme": "neutral", 
 
   "flowchart": {
-    "nodeSpacing": 60
+    "nodeSpacing": 50
   },
 "themeVariables": {
   "primaryColor": "#ffffff",
